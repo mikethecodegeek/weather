@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="weather.js"></script>
+
+
+</head>
+<body>
+<div class = 'container-fluid'>
+<h1 class = 'text-center'>Mike's Weather Station</h1>
+
+<div class="box">
+    <input type="search" id="zipcode" placeholder="Search by city and state or Zip" />
+
+</div>
+<div id = 'mytabs' class = 'row'>
+<div class="tab col-md-3 col-md-offset-1 col-sm-5 col-xs-12">
+    <div id = 'today'></div>
+    <div id = 'todaydate'></div>
+    <div id = 'location' class = 'nopac'></div>
+    <div id = 'currenttemp'></div>
+</div>
+<div class="tab col-md-3 col-md-offset-1 col-sm-5 col-sm-offset-2 col-xs-12">
+    <div id = 'description'></div>
+    <div id = 'wind'></div>
+    <div id = 'myicon'></div>
+</div>
+
+<div class="tab col-md-3 col-md-offset-1 col-sm-12 col-xs-12">
+    <div id = 'hitemp'></div>
+    <div id = 'lowtemp'></div>
+    <div id ='humidity'></div>
+</div>
+    <div class = 'tab col-md-11 col-md-offset-1 col-sm-12' id = 'forecast'>
+        <div class="tab" id = 'day1'>
+            <div id = 'day1day'></div>
+            <div id  = 'day1date'></div>
+            <div id = 'day1conditions'></div>
+            <div id = 'day1icon'></div>
+            <div id = 'day1temp'></div>
+        </div>
+        <div class="tab" id = 'day2'>
+            <div id = 'day2day'></div>
+            <div id  = 'day2date'></div>
+            <div id = 'day2conditions'></div>
+            <div id = 'day2icon'></div>
+            <div id = 'day2temp'></div>
+        </div>
+        <div class="tab" id = 'day3'>
+            <div id = 'day3day'></div>
+            <div id  = 'day3date'></div>
+            <div id = 'day3conditions'></div>
+            <div id = 'day3icon'></div>
+            <div id = 'day3temp'></div>
+        </div>
+        <div class="tab" id = 'day4'>
+            <div id = 'day4day'></div>
+            <div id  = 'day4date'></div>
+            <div id = 'day4conditions'></div>
+            <div id = 'day4icon'></div>
+            <div id = 'day4temp'></div>
+        </div>
+        <div class="tab" id = 'day5'>
+            <div id = 'day5day'></div>
+            <div id  = 'day5date'></div>
+            <div id = 'day5conditions'></div>
+            <div id = 'day5icon'></div>
+            <div id = 'day5temp'></div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
